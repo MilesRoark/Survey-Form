@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 139, 0);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(Assets/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 1px;
+}
+
+h1 {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+header p {
+  margin-top: 0;
+}
+
+form {
+  width: 750px;
+  margin-left: 250px;
+  background-color: rgb(4, 5, 56);
+  padding: 20px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  opacity: 0.7;
+  font-size: 20px;
+}
+
+input[type="text"] {
+  height: 20px;
+}
+
+fieldset {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 650px;
+  margin-left: 35px;
+  margin-top: 10px;
+  border: none;
+}
+
+#sorcery,
+#war {
+  margin-left: -620px;
+  margin-top: -15px;
+}
+
+.slab,
+.wlab {
+  margin-left: 30px;
+}
+
+.fav {
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+
+.stor {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 450px;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+.storlab {
+  margin-bottom: 5px;
+}
+
+#submit {
+  width: 680px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 45px;
+  background-color: rgb(218, 149, 45);
+  font-size: 30px;
+  font-style: bold;
+}
+
+textarea {
+  width: 670px;
+}

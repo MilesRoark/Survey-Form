@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Conan Exiles Survey</h1>
+      <p>Share your love of the game</p>
+    </header>
+    <form action="https://formspree.io/f/xrbzgpaz" method="post">
+      <fieldset>
+        <label for="callsign">CallSign:</label>
+        <input
+          type="text"
+          id="callsign"
+          name="callsign"
+          placeholder="JackDsniper"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="JackDsniper@xyz.com"
+          required
+        />
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" min="13" max="120" required />
+      </fieldset>
+      <fieldset>
+        <p class="fav">What's your favorite age in Conan Exiles:</p>
+        <label for="sorcery" class="slab">Age of Sorcery</label>
+        <input type="radio" id="sorcery" name="build" />
+        <label for="war" class="wlab">Age of War</label>
+        <input type="radio" name="build" id="war" />
+      </fieldset>
+      <fieldset>
+        <label for="server">What is your prefered server-type?</label>
+        <select name="type" id="server" multiple>
+          <option value="pvp">PvP</option>
+          <option value="conflict">PvE conflict</option>
+          <option value="pve">PVE</option>
+          <option value="story">Story Mode</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="dungeon">What's your favorite Dungeon?</label>
+        <input type="text" id="dungeon" />
+      </fieldset>
+      <div class="stor">
+        <label for="stories" class="storlab">Tell your best Exile story</label>
+        <textarea
+          name="stories"
+          id="stories"
+          cols="5"
+          rows="5"
+          placeholder="I was once stuck in the Unnamed city with..."
+        ></textarea>
+      </div>
+      <label for="submit">
+        <input type="submit" id="submit" />
+      </label>
+    </form>
+  </body>
+</html>

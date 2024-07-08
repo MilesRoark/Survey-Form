@@ -1,0 +1,25 @@
+@media (max-width: 1088px) {
+  form {
+    margin-left: 0;
+    font-size: 15px;
+    width: 300px;
+    padding-bottom: 150px;
+  }
+
+  fieldset {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .stor,
+  #submit {
+    margin-left: 2px;
+  }
+
+  input[type="text"],
+  select,
+  textarea,
+  #submit {
+    width: 300px;
+  }
+}
